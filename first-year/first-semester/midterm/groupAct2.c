@@ -4,7 +4,7 @@
         Arce, Jhon Brian V.
         Betinol, Aron James
         Meredores, Joshua
-        Calpo, Maxwell
+        Calpo, Maxell
         Santelices, Albert
 */
 
@@ -50,13 +50,14 @@ int main()
     printf("Enter the Rate of Growth : ");
     scanf("%f", &r);
 
-    printf("Enter the Time : ");
+    printf("Enter the Time in Month : ");
     scanf("%f", &t);
 
     printf("What did you want to find? ");
     scanf("%s", &opt);
 
     // processing or a computation to rate onto decimal
+    t /= 12;
     r /= 100;
 
     // the Decision of opt
@@ -81,9 +82,11 @@ int main()
             printf("                t = %g                                                              \n", t);
             printf("                A = ?                                                                  \n");
             printf("            Answer :                                                                   \n");
-            printf("                A = %g therefore, the City population would be about              \n", ans);
-            printf("                                %g after %g years.                             \n", ans, t);
+            printf("                A = %.0f therefore, the City population would be about            \n", ans);
+            printf("                                %.0f after %g Years.                         \n", ans, t);
             printf("=======================================================================================\n");
+            printf("                                © Group #2   2022-2022                                 \n");
+            printf("                                 Colegio De Montalban                                  \n");
             }
 
         if(opt == '2')
@@ -105,9 +108,11 @@ int main()
             printf("                t = %g                                                              \n", t);
             printf("                P = ?                                                                  \n");
             printf("            Answer :                                                                   \n");
-            printf("                P = %g therefore, the initial number of Population would be       \n", ans);
-            printf("                                   %g in %g years.                             \n", ans, t);
+            printf("                P = %.0f therefore, the initial number of Population would be     \n", ans);
+            printf("                                   %.0f in %.0f Months.                          \n", ans, t);
             printf("=======================================================================================\n");
+            printf("                                © Group #2   2022-2022                                 \n");
+            printf("                                 Colegio De Montalban                                  \n");
         }
 
         if(opt == '3')
@@ -129,9 +134,11 @@ int main()
             printf("                t = %g                                                              \n", t);
             printf("                r = ?                                                                  \n");
             printf("            Answer :                                                                   \n");
-            printf("                r = %g therefore, the rate of growth of the Population would be   \n", ans);
-            printf("                                       %g in the %g years.                     \n", ans, t);
+            printf("                r = %.3f therefore, the rate of growth of the Population would be \n", ans);
+            printf("                                       %.3f in the %.0f Months.                  \n", ans, t);
             printf("=======================================================================================\n");
+            printf("                                © Group #2   2022-2022                                 \n");
+            printf("                                 Colegio De Montalban                                  \n");
         }
 
         if(opt == '4')
@@ -153,9 +160,11 @@ int main()
             printf("                r = %g                                                              \n", r);
             printf("                t = ?                                                                  \n");
             printf("            Answer :                                                                   \n");
-            printf("                t = %g therefore, in the %g the size of Population was %g \n", ans, ans, A);
+            printf("                t = %.0f therefore, in the %.0f Months the size of Population was %g \n", ans, ans, A);
             printf("                                                                                       \n");
-            printf("=======================================================================================\n\n");
+            printf("=======================================================================================\n");
+            printf("                                © Group #2   2022-2022                                 \n");
+            printf("                                 Colegio De Montalban                                  \n");
         }
     }
 
@@ -163,19 +172,20 @@ int main()
     if(opt > '4' || opt < '0')
     {
         system("cls");
-        
+
         printf("=======================================================================================\n");
         printf("                                      !! WARNING !!                                    \n");
         printf("=======================================================================================\n");
         printf("                                                                                       \n");
         printf("                                                                                       \n");
-        printf("                               Sorry! you input a Wrong Number.                        \n");
+        printf("                        Sorry! this variable number was not EXIST.                     \n");
         printf("                                       Please try Again.                               \n");
         printf("                                                                                       \n");
         printf("                                                                                       \n");
         printf("=======================================================================================\n");
+        printf("                                © Group #2   2022-2022                                 \n");
+        printf("                                 Colegio De Montalban                                  \n");
     }
-    // the Code after if this is a copyright
-    printf("                                © Group #2   2022-2022                                  \n");
-    printf("                                 Colegio De Montalban                                   \n");
+    // the Code after if
+    printf("                           Thank You for using our Program!                             \n");
 }
