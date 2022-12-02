@@ -1,3 +1,6 @@
+/*  Arce, Jhon Brian 
+    BSIT 1F
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
